@@ -15,6 +15,7 @@ app.config['SECRET_KEY'] = 'cows'
 toolbar = DebugToolbarExtension(app)
 
 connect_db(app)
+app.app_context()
 # db.create_all()
 
 @app.route('/')
